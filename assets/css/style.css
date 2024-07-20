@@ -8,8 +8,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #4F345A;
-    color: white;
+    background-color: #34252F;
+    color: #34252F;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -21,9 +21,11 @@ body {
 }
 
 .presentation-container {
+    background-color: #00000066;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 90vh;
     max-width: 1200px; /* Adjust based on desired max width */
 }
@@ -51,9 +53,9 @@ body {
 }
 
 .scroll-indicator {
-    background-color: rgba(255, 255, 255, 0.21);
-    margin-left: 20px; /* Space between the video and the indicator */
+    border-radius: 10px;
     padding: 10px;
+    margin: 10px;
     text-align: center;
     color: white;
     display: none; /* Initially hidden */
@@ -79,23 +81,22 @@ body {
 
 .arrow:nth-child(1) {
     animation-delay: 0s;
+    animation-duration: 2s;
 }
 
 .arrow:nth-child(2) {
     animation-delay: 0.2s;
+    animation-duration: 2s;
 }
 
 .arrow:nth-child(3) {
     animation-delay: 0.4s;
-}
-
-.arrow:nth-child(4) {
-    animation-delay: 0.6s;
+    animation-duration: 2s;
 }
 
 @keyframes blink {
     0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+    75% { opacity: 1; }
 }
 
 @media (min-width: 768px) {
@@ -103,6 +104,74 @@ body {
         display: block;
     }
 }
+
+/* CONTACT */
+
+@font-face {
+    font-family: 'Nexus_Font'; 
+    src: url('../fonts/Nexus_Font.TTF'); 
+  }
+
+#presentation{
+    margin: 5px;
+    color: white;
+}
+
+#presentation h1{
+    font-size: calc(3vmin + 3vmax);
+    text-align: center;
+    line-height: 1;
+    word-spacing: .5rem;
+    font-family: 'Nexus_Font', sans-serif; 
+}
+
+hr{
+    color: #A480CF;
+    width: 100vh;
+    margin: 10px auto;
+}
+
+#my-works{
+    font-size: calc(2vmin + 3vmax);
+    text-align: center;
+    line-height: 1;
+    word-spacing: .5rem;
+}
+
+#presentation p:last-of-type{
+    text-align: center;
+    font-style: italic;
+    font-size: medium;
+    color: #A480CF;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+#contact{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact a{
+    margin: 10px auto auto;
+    font-size: larger;
+    color: #b9a2d4;
+}
+
+#instagram{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* PORTFOLIO */
 
 article {
     width: 100%;
@@ -215,13 +284,14 @@ article {
     }
     h2 {
         margin: 15% 0 auto;
-        font-size: calc(5vmin + 3vmax);
+        font-family: 'Nexus_Font', sans-serif; 
+        font-size: calc(3vmin + 3vmax);
         text-align: center;
         font-weight: 700;
         line-height: 1;
         word-spacing: .5rem;
     }
-    p {
+    p:not(#my-works) {
         text-align: right;
         width: 100%;
         font-family: "Roboto Slab", serif;
