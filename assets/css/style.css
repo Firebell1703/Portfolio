@@ -192,21 +192,7 @@ article {
         overflow: hidden;
         box-shadow: 4px -4px 8px rgba(0,0,0,.4);
     }
-    figure::after {
-        content: '';
-        position: absolute;
-        top: 5vmin;
-        right: 5vmin;
-        bottom: 5vmin;
-        left: 45%;
-        outline-offset: -5vmin;
-        backdrop-filter: grayscale(1);
-        pointer-events: none;
-    }
-    figure:nth-of-type(2n)::after {
-        right: 45%;
-        left: 5vmin;
-    }
+
     .demi-scroll {
         background: #BAD9B5;
         width: calc(50% + 1px);
@@ -291,7 +277,7 @@ article {
         line-height: 1;
         word-spacing: .5rem;
     }
-    p:not(#my-works) {
+    p:not(#my-works):not(footer p) {
         text-align: right;
         width: 100%;
         font-family: "Roboto Slab", serif;
@@ -300,4 +286,28 @@ article {
         font-size: calc(1.5vmin + 1.75vmax);
         margin-bottom: 5%;
     }
+}
+
+footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: calc(1.5vmin + 1.75vmax);
+    font-family: 'Nexus_Font', sans-serif; 
+    padding: 25px;
+    background-color: #037971;
+    border-top: solid 5px #34252F;
+}
+
+footer a{
+    text-align: center;
+    color: white;
+    font-family: "Roboto Slab", serif;
+}
+
+a:hover{
+    color: #BAD9B5;
 }
