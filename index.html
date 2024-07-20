@@ -3,61 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet" />
     <title>Honorine HENRYON | Portfolio</title>
-    <script src="./assets/js/main.js"></script>
 </head>
 <body>
 
     <!-- PRESENTATION -->
-
-    <video id="showreel" controls autoplay muted>
-        <source src="./assets/videos/Mini-showreel.mp4" type="video/mp4">
-        <source src="./assets/videos/Mini-showreel.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
-    
-        <!-- <div class="story">
-          <div class="story-content">
-            <h2>Wonder Woman</h2>
-            <h4>Diana, princess of the Amazons, trained to be an unconquerable warrior. Raised on a sheltered island paradise, when a pilot crashes on their shores and tells of a massive conflict raging in the outside world, Diana leaves her home, convinced she can stop the threat. Fighting alongside man in a war to end all wars, Diana will discover her full powers and her true destiny.</h4>
-          </div>
+    <div class="presentation-container">
+        <div class="video-container">
+            <video id="showreel" controls autoplay loop muted preload="auto">
+                <source src="./assets/videos/Mini-showreel.mp4" type="video/mp4">
+                <source src="./assets/videos/Mini-showreel.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
         </div>
-        <div class="actor">
-          <ul>
-            <li>
-              <h2>Director</h2>
-              <h4>Patty Jenkins</h4>
-            </li>
-            <li>
-              <h2>Writers</h2>
-              <h4>Allan Heinberg, Zack Snyder</h4>
-            </li>
-            <li>
-              <h2>Stars</h2>
-              <h4>Gal Gadot, Chris Pine</h4>
-            </li>
-          </ul>
-        </div> -->
-      
-      <ul class="scroll-wrap">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        <div class="scroll-indicator">
+            <p>Scroll</p>
+            <div class="arrows">
+                <div class="arrow">&#9660;</div>
+                <div class="arrow">&#9660;</div>
+                <div class="arrow">&#9660;</div>
+                <div class="arrow">&#9660;</div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
 
     <!-- PORTFOLIO -->
-
     <article>
         <figure>
             <a href="./assets/img/asset-work.png" target="_blank"><img src='./assets/img/asset-work.png' style="width: 10vh;" /></a>
         </figure>
         <section class="demi-scroll">
-                <div>
-                    <h2>Scrolling half by half</h2>
-                    <p>Made in pure #CSS and almost all is "old properties" method. And a bit imagination.<br/>
-                    Yes, the flexbox is old now.</p>
-                </div>
+            <div>
+                <h2>Scrolling half by half</h2>
+                <p>Made in pure #CSS and almost all is "old properties" method. And a bit imagination.<br/>
+                Yes, the flexbox is old now.</p>
+            </div>
         </section>
         
         <figure>
