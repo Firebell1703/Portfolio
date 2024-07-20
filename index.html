@@ -33,7 +33,7 @@
     <!-- CONTACT -->
 
     <div id="presentation">
-        <h1>Honorine</h1>
+        <a id="contact-honorine"><h1>Honorine</h1></a>
         <hr>
         <div id="contact">
             <div id="instagram">
@@ -169,22 +169,39 @@
         </figure>
         <section class="demi-scroll">
             <div>
-                <h2>Photobashing</h2>
+                <h2 style="font-size: calc(2vmin + 3vmax);">Photobashing</h2>
                 <p>Exercise to include a character in a picture.</p>
             </div>
         </section>
 
         <figure>
-            <a href="./assets/img/sketching-1.png" target="_blank"><img src='./assets/img/sketching-1.png' style="width: 10vh;" /></a>
-            <!-- <a href="./assets/img/sketching-2.png" target="_blank"><img src='./assets/img/sketching-2.png' style="width: 10vh;" /></a>
-            <a href="./assets/img/sketching-3.png" target="_blank"><img src='./assets/img/sketching-3.png' style="width: 10vh;" /></a>
-            <a href="./assets/img/sketching-4.png" target="_blank"><img src='./assets/img/sketching-4.png' style="width: 10vh;" /></a>
-            <a href="./assets/img/sketching-5.png" target="_blank"><img src='./assets/img/sketching-5.png' style="width: 10vh;" /></a> -->
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src='./assets/img/sketching-1.png' style="width: 10vh;" alt="Image 1" />
+                        <img src='./assets/img/sketching-2.png' style="width: 10vh;" alt="Image 2" />
+                        <img src='./assets/img/sketching-3.png' style="width: 10vh;" alt="Image 3" />
+                        <img src='./assets/img/sketching-4.png' style="width: 10vh;" alt="Image 4" />
+                        <img src='./assets/img/sketching-5.png' style="width: 10vh;" alt="Image 5" />
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
         </figure>
         <section class="demi-scroll">
             <div>
                 <h2>Sketchings</h2>
-                <p>Those 5 images are realised on my free time, it contained research for other works, some fanart and original personal characters.</p>
+                <ul>
+                        <li><a href="./assets/img/sketching-1.png" target="_blank">Sketch 1</a></li>
+                        <li><a href="./assets/img/sketching-2.png" target="_blank">Sketch 2</a></li>
+                        <li><a href="./assets/img/sketching-3.png" target="_blank">Sketch 3</a></li>
+                        <li><a href="./assets/img/sketching-4.png" target="_blank">Sketch 4</a></li>
+                        <li><a href="./assets/img/sketching-5.png" target="_blank">Sketch 5</a></li>
+                </ul>
+                <p>Those 5 images are realised on my free time, it contained research for other works, some fanart and original personal characters.
+                </p>
             </div>
         </section>
 
@@ -201,7 +218,7 @@
     </article>
 
     <footer>
-        <p>LETS WORK TOGETHER !<br><a href=""> &#9650; Contact &#9650; </a></p>
+        <p>LETS WORK TOGETHER !<br><a href="#contact-honorine"> &#9650; Contact &#9650; </a></p>
         
     </footer>
 </body>
